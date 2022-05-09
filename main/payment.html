@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+
+    <link rel="stylesheet" href="../css/pagamento.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="pagamento">
+      <div class="descricao-pagamento">
+        <h3>
+          Acesso ao Aplicativo de vagas e turismo Global Main Zone. (30 Dias)
+        </h3>
+        <h2>R$ 29,90</h2>
+      </div>
+      <div class="form-pagamento">
+        <form method="post">
+          <div class="form-100">
+            <label>E-mail</label>
+            <input type="text" />
+          </div>
+          <div class="form-100">
+            <label>Dados do Cartão</label>
+            <input type="text" placeholder="1234 1234 1234 1234" />
+            <div class="form-50">
+              <input style="margin-top: -1px" type="text" placeholder="12/23" />
+              <input
+                style="margin-left: -1px; margin-top: -1px"
+                type="text"
+                placeholder="CVC"
+              />
+            </div>
+          </div>
+          <div class="form-100">
+            <input type="text" placeholder="Nome no cartão" />
+          </div>
+          <div class="form-100">
+            <input type="submit" name="acao" value="Pagar!" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
