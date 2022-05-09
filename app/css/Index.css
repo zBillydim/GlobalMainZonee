@@ -433,10 +433,10 @@ footer {
 
 footer .logo {
   display: inline-block;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.2rem;
 }
 
-footer .logo svg {
+footer .logo img {
   width: 23.6rem;
   height: 3.1rem;
 }
@@ -743,5 +743,15 @@ footer .social-links {
 
   footer p {
     margin-bottom: 0;
+  }
+  .login {
+    text-decoration: none;
+    background: var(--primary-color);
+    border-radius: 4rem;
+    margin-bottom: 4rem;
+    padding: 1.6rem 3.2rem;
+    width: fit-content;
+    color: white;
+    text-transform: uppercase;
   }
 }
