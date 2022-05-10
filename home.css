@@ -486,6 +486,7 @@ footer .social-links {
     width: min(112rem, 100%);
     display: grid;
   }
+  
 
   .col-a {
     grid-area: A;
@@ -506,6 +507,7 @@ footer .social-links {
 
   /*=== NAVIGATION =================================*/
   /* reset */
+  
   nav#navigation .wrapper * {
     margin: 0;
     padding: 0;
@@ -641,6 +643,7 @@ footer .social-links {
       'A B'
       'C C';
   }
+  
 
   #home .col-a {
     text-align: left;
@@ -702,6 +705,7 @@ footer .social-links {
     grid-template-areas: 'B A';
     gap: 6.7rem;
   }
+  
 
   #about .col-a {
     align-self: center;
@@ -731,6 +735,7 @@ footer .social-links {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
   }
+  
 
   footer .col-a {
     align-self: center;
