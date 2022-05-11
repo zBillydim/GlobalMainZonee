@@ -875,4 +875,57 @@ footer .social-links {
     font-size: 0.9rem;
     text-transform: lowercase;
   }
+  .button-a {
+    background: transparent;
+
+    border: 1px solid var(--headline);
+    border-radius: 1rem;
+
+    margin-bottom: 6rem;
+
+    padding: 1.6rem 3.2rem;
+    width: fit-content;
+
+    color: var(--headline);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    text-decoration: none;
+
+    transition: background 200ms;
+  }
+
+  #contact .button-a:hover path {
+    fill: white;
+  }
+
+  #contact .button-a:hover {
+    color: white;
+    background-color: transparent;
+  }
+  #contact .button-a path {
+    fill: var(--headline);
+  }
+  #contact .button-a::before {
+    content: '';
+    position: absolute;
+    height: 5.5rem;
+    width: 26rem;
+    z-index: -1;
+
+    border-radius: 1.3rem;
+    background-color: #006f85;
+    transform: translate(1.4rem, 0.8rem);
+    transition: 0.4s;
+  }
+  #contact .button-a:hover:before {
+    background-color: #00a600;
+    transform: translate(-0.9rem, -1rem);
+  }
 }
