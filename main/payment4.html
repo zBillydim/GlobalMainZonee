@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planos</title>
+    <title>Payment</title>
 
-    <link rel="icon" href="assets/planeta-inicial.png" />
-
-    <link rel="stylesheet" href="/home.css" />
+    <link rel="icon" href="../assets/planeta-inicial.png" />
+    <link rel="stylesheet" href="./css/pagamento.css" />
+    <link rel="stylesheet" href="./css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,19 +20,15 @@
     />
   </head>
   <body>
-    <!-- inicio do nav (parte de cima do site)-->
     <nav id="navigation">
       <div class="wrapper">
-        <a
-          class="logo animate__animated animate__backInLeft"
-          href="/index.html"
-        >
-          <img src="assets/logotipo.svg" />
+        <a class="logo animate__animated animate__backInLeft" href="#home">
+          <img src="../assets/logotipo.svg" />
         </a>
         <div class="menu">
           <ul>
             <li>
-              <a onclick="closeMenu()" href="/index.html">Início</a>
+              <a onclick="closeMenu()" href="./index.html">Início</a>
             </li>
           </ul>
           <ul class="social-links">
@@ -153,18 +149,44 @@
         </button>
       </div>
     </nav>
-    <!-- fim do nav -->
-    <!-- inicio do desenvolvimento planos -->
-    <section>
-      <div>TESTE</div>
+    <section class="pagamento">
+      <div class="descricao-pagamento">
+        <h3>
+          Acesso ao Aplicativo de vagas e turismo Global Main Zone. (30 Dias)
+        </h3>
+        <h2>R$ 119,90</h2>
+      </div>
+      <div class="form-pagamento">
+        <form method="post">
+          <div class="form-100">
+            <label>E-mail</label>
+            <input type="text" placeholder="example@example.com" />
+          </div>
+          <div class="form-100">
+            <label>Dados do Cartão</label>
+            <input type="text" placeholder="1234 1234 1234 1234" />
+            <div class="form-50">
+              <input style="margin-top: -1px" type="text" placeholder="12/23" />
+              <input
+                style="margin-left: -1px; margin-top: -1px"
+                type="text"
+                placeholder="CVC"
+              />
+            </div>
+          </div>
+          <div class="form-100">
+            <input type="text" placeholder="Nome no cartão" />
+          </div>
+          <div class="form-100">
+            <input type="submit" name="acao" value="Pagar!" href="#teste" />
+          </div>
+        </form>
+      </div>
     </section>
-
-    <!-- fim do desenvolvimento planos-->
-    <!-- inicio do footer (parte de baixo do site)-->
     <footer>
       <div class="wrapper">
         <div class="col-a">
-          <a class="logo" href="/index.html">
+          <a class="logo" href="#home">
             <img src="/assets/logotipo1.svg" alt="logo site" />
           </a>
           <p>
@@ -234,8 +256,7 @@
         </div>
       </div>
     </footer>
-    <!-- fim do footer -->
   </body>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="./main.js"></script>
+  <script src="../js/main.js"></script>
 </html>
