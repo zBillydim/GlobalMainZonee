@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planos</title>
+    <title>Payment</title>
 
     <link rel="icon" href="assets/planeta-inicial.png" />
-
+    <link rel="stylesheet" href="/pagamento.css" />
     <link rel="stylesheet" href="/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,13 +20,9 @@
     />
   </head>
   <body>
-    <!-- inicio do nav (parte de cima do site)-->
     <nav id="navigation">
       <div class="wrapper">
-        <a
-          class="logo animate__animated animate__backInLeft"
-          href="/index.html"
-        >
+        <a class="logo animate__animated animate__backInLeft" href="#home">
           <img src="assets/logotipo.svg" />
         </a>
         <div class="menu">
@@ -153,159 +149,44 @@
         </button>
       </div>
     </nav>
-    <!-- fim do nav -->
-    <!-- inicio do desenvolvimento planos -->
-    <section id="services">
-      <div class="wrapper">
-        <header>
-          <h4>PLANOS</h4>
-          <h2>Quais planos lhe atendem melhor?</h2>
-        </header>
-
-        <div class="content">
-          <div class="cards">
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
-                <path
-                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
-                  stroke="#00856F"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>COMUM</h3>
-              <p>
-                Utilização diaria de no máximo 2 Horas de estacionamento.
-              </p>
-              <h3>R$29,90<a class="dias">(30 Dias)</a></h3>
-              <br>
-              <a class="box-teste" href="payment.html">SELECIONAR</a>
+    <section class="pagamento">
+      <div class="descricao-pagamento">
+        <h3>
+          Acesso ao Aplicativo de vagas e turismo Global Main Zone. (30 Dias)
+        </h3>
+        <h2>R$ 79,90</h2>
+      </div>
+      <div class="form-pagamento">
+        <form method="post">
+          <div class="form-100">
+            <label>E-mail</label>
+            <input type="text" placeholder="example@example.com" />
+          </div>
+          <div class="form-100">
+            <label>Dados do Cartão</label>
+            <input type="text" placeholder="1234 1234 1234 1234" />
+            <div class="form-50">
+              <input style="margin-top: -1px" type="text" placeholder="12/23" />
+              <input
+                style="margin-left: -1px; margin-top: -1px"
+                type="text"
+                placeholder="CVC"
+              />
             </div>
-
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
-                <path
-                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
-                  stroke="#00856F"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>OCUPADO</h3>
-              <p>
-                Utilização diaria de no máximo 4 Horas.
-              </p>
-              <h3>R$49,90<a class="dias">(30 Dias)</a></h3>
-              <br>
-              <a class="box-teste" href="payment2.html">SELECIONAR</a>
-            </div>
-
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
-                <path
-                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
-                  stroke="#00856F"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>ATAREFADO</h3>
-              <p>
-                Utilização diaria de no máximo 6 Horas de estacionamento.
-              </p>
-              <h3>R$79,90<a class="dias">(30 Dias)</a></h3>
-              <br>
-              <a class="box-teste" href="payment3.html">SELECIONAR</a>
-            </div>
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
-                <path
-                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
-                  stroke="#00856F"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>ILIMITADO</h3>
-              <p>
-                Utilização diaria ilimitada.
-              </p>
-              <h3>R119,90<a class="dias">(30 Dias)</a></h3>
-              <br>
-              <a class="box-teste" href="payment4.html">SELECIONAR</a>
-            </div>
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
-                <path
-                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
-                  stroke="#00856F"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>POR HORA</h3>
-              <p>
-              Uso ilimitado sem mensalidade
-              </p>
-              <h3>R$2,00<a class="dias">(A Hora)</a></h3>
-              <br>
-              <a class="box-teste" href="free.html">SELECIONAR</a>
-            </div>
-
+          </div>
+          <div class="form-100">
+            <input type="text" placeholder="Nome no cartão" />
+          </div>
+          <div class="form-100">
+            <input type="submit" name="acao" value="Pagar!" href="#teste" />
+          </div>
+        </form>
+      </div>
     </section>
-
-
-    <!-- fim do desenvolvimento planos-->
-    <!-- inicio do footer (parte de baixo do site)-->
     <footer>
       <div class="wrapper">
         <div class="col-a">
-          <a class="logo" href="/index.html">
+          <a class="logo" href="#home">
             <img src="/assets/logotipo1.svg" alt="logo site" />
           </a>
           <p>
@@ -375,7 +256,6 @@
         </div>
       </div>
     </footer>
-    <!-- fim do footer -->
   </body>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./main.js"></script>
