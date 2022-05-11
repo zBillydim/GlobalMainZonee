@@ -98,18 +98,20 @@ section .content p {
   color: var(--paragraph);
 }
 
-.button {
-  background: var(--primary-color);
+.button,
+#home.button,
+#contact.button {
+  background: transparent;
 
-  border: none;
-  border-radius: 4rem;
+  border: 1px solid var(--headline);
+  border-radius: 1rem;
 
   margin-bottom: 6rem;
 
   padding: 1.6rem 3.2rem;
   width: fit-content;
 
-  color: white;
+  color: var(--headline);
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -124,8 +126,40 @@ section .content p {
   transition: background 200ms;
 }
 
-.button:hover {
-  background-color: var(--brand-dark);
+#home .button path,
+#contact .button path {
+  fill: var(--headline);
+}
+
+#home .button:hover path,
+#contact .button:hover path {
+  fill: white;
+}
+
+#home .button:hover,
+#contact .button:hover {
+  color: white;
+  background-color: transparent;
+}
+
+#home .button::before,
+#contact .button::before {
+  content: '';
+  position: absolute;
+  height: 5rem;
+  width: 24rem;
+  z-index: -1;
+
+  border-radius: 1.3rem;
+  background-color: #006f85;
+  transform: translate(1.4rem, 0.8rem);
+  transition: 0.4s;
+}
+
+#home .button:hover:before,
+#contact .button:hover:before {
+  background-color: #00a600;
+  transform: translate(-0.9rem, -1rem);
 }
 
 .social-links {
@@ -486,7 +520,6 @@ footer .social-links {
     width: min(112rem, 100%);
     display: grid;
   }
-  
 
   .col-a {
     grid-area: A;
@@ -507,7 +540,7 @@ footer .social-links {
 
   /*=== NAVIGATION =================================*/
   /* reset */
-  
+
   nav#navigation .wrapper * {
     margin: 0;
     padding: 0;
@@ -643,7 +676,6 @@ footer .social-links {
       'A B'
       'C C';
   }
-  
 
   #home .col-a {
     text-align: left;
@@ -705,7 +737,6 @@ footer .social-links {
     grid-template-areas: 'B A';
     gap: 6.7rem;
   }
-  
 
   #about .col-a {
     align-self: center;
@@ -735,7 +766,6 @@ footer .social-links {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
   }
-  
 
   footer .col-a {
     align-self: center;
@@ -745,8 +775,7 @@ footer .social-links {
     align-self: center;
     justify-self: flex-end;
   }
-
-  footer p {
+  a footer p {
     margin-bottom: 0;
   }
   .login {
@@ -758,5 +787,87 @@ footer .social-links {
     width: fit-content;
     color: white;
     text-transform: uppercase;
+  }
+  .botao {
+    background: transparent;
+
+    border: 1px solid var(--headline);
+    border-radius: 1rem;
+
+    margin-bottom: 2rem;
+
+    padding: 1.6rem 3.2rem;
+    width: fit-content;
+
+    color: var(--headline);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    text-decoration: none;
+
+    transition: background 200ms;
+  }
+  .botao path {
+    fill: var(--headline);
+  }
+  .botao:hover path {
+    fill: white;
+  }
+  .botao:hover {
+    color: white;
+    background-color: transparent;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .botao::before {
+    content: '';
+    position: absolute;
+    height: 6rem;
+    width: 22rem;
+    z-index: -1;
+
+    border-radius: 1.3rem;
+    background-color: #006f85;
+    transform: translate(1.4rem, 0.8rem);
+    transition: 0.4s;
+  }
+  .botao:hover:before {
+    background-color: #00a600;
+    transform: translate(-0.9rem, -1rem);
+  }
+  .box-teste {
+    background: transparent;
+
+    border: 1px solid var(--headline);
+    border-radius: 1rem;
+
+    padding: 1.6rem 3.2rem;
+    width: fit-content;
+
+    color: var(--headline);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+  }
+  .box-teste:hover {
+    background-color: #00a600;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .dias {
+    font-size: 0.9rem;
+    text-transform: lowercase;
   }
 }
