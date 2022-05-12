@@ -875,6 +875,9 @@ footer .social-links {
     font-size: 0.9rem;
     text-transform: lowercase;
   }
+  
+}
+@media (max-width: 1024px){
   .button-a {
     background: transparent;
 
@@ -928,4 +931,4 @@ footer .social-links {
     background-color: #00a600;
     transform: translate(-0.9rem, -1rem);
   }
-}
+  }
