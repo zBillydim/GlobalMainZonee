@@ -130,3 +130,16 @@ footer p {
 footer .social-links {
   justify-content: flex-start;
 }
+
+.container-baixo{
+  width: 60%;
+  margin: 0px 160px ;  
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  background-color: transparent;
+  
+}
